@@ -122,6 +122,15 @@ header{
     }
 }
 @media (max-width:900px){
+    header{
+        flex-direction: column;
+    }
+    .titulo{
+        order: 1;
+    }
+    .navbar{
+        order: 2;
+    }
     h1{
         text-align: center;
     }
