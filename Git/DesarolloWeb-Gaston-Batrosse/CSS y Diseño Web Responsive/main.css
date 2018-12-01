@@ -25,32 +25,29 @@ html, body{
     box-sizing: border-box;    
 }
 
-.cabecera{
+header{
     background-color: #5b7989;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     color: white;
-    border-radius: 10px 10px 0px 0px;
-    text-shadow: 2px #02010a;
+    border-radius: 10px 10px 0px 0px;    
+    display: flex;
+    flex-direction: row;
 }
-
+.navbar{
+    margin: auto;
+}
+.titulo{
+    margin: auto;
+}
 .footer{
     background-color: #C6d5c5;
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 0px 0px 10px 10px;
-}    
-.navbar{
-    text-align: right;
-    clear: both; 
-    
-}
-h1{
-    float: left;
-    text-shadow: 2px 2px #02010a; 
-}
+}  
 .navbar a{
     text-decoration: none;
     margin: 0px 15px 0px 15px;
@@ -76,21 +73,18 @@ h1{
     box-shadow: 2px 2px 2px 2px  #02010a
 }
 #image2{
-box-shadow: 2px -2px 2px -2px  #02010a;
+    box-shadow: 2px -2px 2px -2px  #02010a;
 }
 #imag2{
     width: 100%;    
 }
 #image3{
-box-shadow: 2px -2px 2px -2px #02010a
+    box-shadow: 2px -2px 2px -2px #02010a
 }
 #imag3{
     width: 100%;    
 }
-#titulo{
-    float: left;
-    clear: both;
-}
+
 
 @media (min-width:900px){    
     
