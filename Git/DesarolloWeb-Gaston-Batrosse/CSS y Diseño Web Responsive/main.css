@@ -40,6 +40,7 @@ header{
 }
 .titulo{
     margin: auto;
+    text-shadow: 2px 2px  #02010a;
 }
 .footer{
     background-color: #C6d5c5;
@@ -48,8 +49,7 @@ header{
     margin-right: auto;
     border-radius: 0px 0px 10px 10px;
 }  
-.navbar a{
-    text-decoration: none;
+.navbar a{   
     margin: 0px 15px 0px 15px;
     font-size: 1.5em;
 }
@@ -84,8 +84,9 @@ header{
 #imag3{
     width: 100%;    
 }
-
-
+#inicio{
+text-decoration: none;
+}
 @media (min-width:900px){    
     
     .cuerpo1{
