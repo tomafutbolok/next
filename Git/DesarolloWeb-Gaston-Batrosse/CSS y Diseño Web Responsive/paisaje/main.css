@@ -5,7 +5,7 @@ html, body{
 }
 @font-face{
     font-family: 'Dancing';
-    src: url('font/Dancing.otf')
+    src: url('../font/Dancing.otf')
 }
 .contenido{
     display: flex;
@@ -56,22 +56,23 @@ header{
 .logo{
     width: 15%;
 }
-
-
 #imag1{
     width: 100%;
-    max-height: 400px;
+   
     box-shadow: 2px 2px 2px 2px  #02010a
 }
-
+figure{
+    margin: auto;
+    padding: 20px;
+}
 #inicio{
 text-decoration: none;
 }
 @media (min-width:900px){    
     
     .cuerpo1{
-        background-color: #82c3a6;
-        width: 100%;        
+        background-color: #d5c75f;
+        width: 33.333%;        
         text-align: center;
     }
      
