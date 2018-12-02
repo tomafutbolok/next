@@ -1,7 +1,20 @@
+@keyframes anime1{
+    0%{
+    margin-top: 150%;
+    }
+    60%{
+    margin-top: -5%;
+    }
+    100%{
+    margin-top: 0%;
+    }
+}
 html, body{
-    margin: 0 auto;
-    background-color: #02010a;
-    font-family: 'Dancing';
+        margin: 0 auto;
+        background-color: #02010a;
+        font-family: 'Dancing';
+        animation-name: anime1;
+        animation-duration: 1.5s;
 }
 @font-face{
     font-family: 'Dancing';
@@ -59,13 +72,13 @@ header{
 #imag1{
     width: 100%;
    
-    box-shadow: 2px 2px 2px 2px  #02010a
+    box-shadow: 2px 2px 2px   #02010a
 }
 figure{
     margin: auto;
     padding: 20px;
 }
-#inicio{
+#paisajes{
 text-decoration: none;
 }
 @media (min-width:900px){    
@@ -119,8 +132,6 @@ text-decoration: none;
         text-align: center;
         width: 100%;        
     }
-    
-    
     .contfooter1{
         width: 100%;    
     }
