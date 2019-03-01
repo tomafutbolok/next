@@ -9,7 +9,21 @@ body{
 }
 .bodyy{
   background-color: rgba(52, 63, 99, 0.5);
-
+}
+.body-back{
+  background-color: rgba(173, 173, 173, 0.555);
+}
+.input-group{
+  width: 80% !important;
+}
+.navx{
+  list-style-type:none;
+  margin-left: 0px !important;
+ text-align: center;
+}
+.navy{
+  text-align: left !important;
+  list-style-type: none;
 }
 .bordo{
   border-right: 1px solid rgb(173, 173, 173);
@@ -17,11 +31,21 @@ body{
 .logo-img{
   width: 30%;
 }
-
+.boxer div{
+margin: auto;
+}
+.boxer img{
+  border: 2px solid black;
+  padding: 2px;
+}
 img{
   max-height: 129px;
 }
-
+.boxx{
+  width: 200px;
+}
 div.secondary.callout.text-center{
   min-height: 242px;
 }
+
+
