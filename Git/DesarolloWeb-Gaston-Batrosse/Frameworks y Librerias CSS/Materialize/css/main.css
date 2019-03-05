@@ -1,0 +1,46 @@
+body{
+background-image: url(../img/fondo.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+.z-depth-1, nav{
+  box-shadow: none !important;  
+}
+
+nav{
+  background-color: transparent !important;
+}
+.logo{
+width: 120px;
+margin-left: 20px;
+}
+.collection{
+  text-align: center !important;
+}
+.btn{
+  background-color: #939f9e !important;
+}
+.logo-a{
+width: 50%;
+margin: auto;
+}
+.slogan{
+  margin-left: 150px !important;
+}
+.collection{
+  margin: auto !important;
+}
+.grid-img img{
+max-width: 100%;
+}
+.blog{
+  overflow: auto;
+  background-color: #fff;
+  margin: 0.5rem 0 1rem 0;
+}
+.blog img{
+  width: 50%;
+  float: left;
+ padding: 10px;
+}
