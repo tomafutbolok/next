@@ -14,14 +14,39 @@ var nueve = document.getElementById('9');
 var igual = document.getElementById('igual');
 var mas = document.getElementById('mas');
 var resta = document.getElementById('menos');
+var por = document.getElementById('por');
+var dividir = document.getElementById('dividido');
+var sign = document.getElementById('sign');
+var on = document.getElementById('on');
+var punto = document.getElementById('punto');
 
+igual.addEventListener('mousedown',function(){
+    igual.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ igual.addEventListener('mouseout',function(){
+     igual.setAttribute('style','transform:scale(1,1)')
+ })
 
+cero.addEventListener('click',function(){
+    numero = 0;
+    if (pantalla.textContent==0){
+
+    }else{
+        pantalla.textContent += numero;
+    }
+})
+cero.addEventListener('mousedown',function(){
+   cero.setAttribute('style','transform:scale(0.95,0.95)')
+})
+cero.addEventListener('mouseout',function(){
+    cero.setAttribute('style','transform:scale(1,1)')
+})
 uno.addEventListener('click',function(){
     var numero = 1;
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "1";
+        pantalla.textContent+= numero;
     }
 })
 uno.addEventListener('mousedown',function(){
@@ -36,13 +61,13 @@ dos.addEventListener('click',function(){
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "2";
+        pantalla.textContent+= numero;
     }
 })
 dos.addEventListener('mousedown',function(){
     dos.setAttribute('style','transform:scale(0.95,0.95)')
 })
-uno.addEventListener('mouseout',function(){
+dos.addEventListener('mouseout',function(){
     dos.setAttribute('style','transform:scale(1.1)')
 })
 
@@ -52,7 +77,7 @@ tres.addEventListener('click',function(){
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "3";
+        pantalla.textContent+= numero;
     }
 })
 tres.addEventListener('mousedown',function(){
@@ -69,7 +94,7 @@ cuatro.addEventListener('click',function(){
     if (pantalla.textContent== 0 ){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "4";
+        pantalla.textContent+= numero;
       
     }
 })
@@ -86,7 +111,7 @@ cinco.addEventListener('click',function(){
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "5";
+        pantalla.textContent+= numero;
     }
 })
 cinco.addEventListener('mousedown',function(){
@@ -102,7 +127,7 @@ seis.addEventListener('click',function(){
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "6";
+        pantalla.textContent+= numero;
     }
 })
 seis.addEventListener('mousedown',function(){
@@ -117,7 +142,7 @@ siete.addEventListener('click',function(){
     if (pantalla.textContent == 0){
               pantalla.textContent=numero;     
     } else{
-        pantalla.textContent=pantalla.textContent + "7";
+        pantalla.textContent+= numero;
     }
 })
 
@@ -134,7 +159,7 @@ ocho.addEventListener('click',function(){
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "8";
+        pantalla.textContent+= numero;
     }
 })
 ocho.addEventListener('mousedown',function(){
@@ -150,7 +175,7 @@ nueve.addEventListener('click',function(){
     if (pantalla.textContent== 0){
         pantalla.textContent=numero;
     }else{
-        pantalla.textContent=pantalla.textContent + "9";
+        pantalla.textContent += numero;
     }
 })
 nueve.addEventListener('mousedown',function(){
@@ -159,6 +184,8 @@ nueve.addEventListener('mousedown',function(){
 nueve.addEventListener('mouseout',function(){
     nueve.setAttribute('style','transform:scale(1.1)')
 })
+
+
 
 borrar = function(){
     pantalla.textContent="";
@@ -176,6 +203,25 @@ resta.addEventListener('click',function(){
     borrar();
 })
 
+por.addEventListener('click',function(){
+    numero1= parseFloat(pantalla.textContent);
+    signo = "*";
+    borrar();
+})
+
+dividir.addEventListener('click',function(){
+    numero1 = parseFloat(pantalla.textContent);
+    signo="/";
+    borrar();
+})
+
+on.addEventListener('click',function(){
+    numero1=0;
+    numero2=0;
+    signo="";
+    pantalla.textContent="0";
+})
+
 igual.addEventListener('click',function(){
     numero2 = parseInt(pantalla.textContent);
     switch(signo){
@@ -185,5 +231,11 @@ igual.addEventListener('click',function(){
         case "-": resultado = numero1 - numero2;
         pantalla.textContent=resultado;
         break;
+        case "*": resultado = numero1 * numero2;
+        pantalla.textContent=resultado;
+        break;
+        case "/": resultado = numero1 / numero2;
+        pantalla.textContent=resultado;
+        break;
     }
-})
+});
