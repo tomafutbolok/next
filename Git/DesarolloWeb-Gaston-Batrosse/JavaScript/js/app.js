@@ -20,18 +20,66 @@ var sign = document.getElementById('sign');
 var on = document.getElementById('on');
 var punto = document.getElementById('punto');
 
+
+
 igual.addEventListener('mousedown',function(){
     igual.setAttribute('style','transform:scale(0.95,0.95)')
  })
  igual.addEventListener('mouseout',function(){
      igual.setAttribute('style','transform:scale(1,1)')
  })
+ mas.addEventListener('mousedown',function(){
+    mas.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ mas.addEventListener('mouseout',function(){
+    mas.setAttribute('style','transform:scale(1,1)')
+ })
+ resta.addEventListener('mousedown',function(){
+    resta.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ resta.addEventListener('mouseout',function(){
+    resta.setAttribute('style','transform:scale(1,1)')
+ })
+ dividir.addEventListener('mousedown',function(){
+    dividir.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ dividir.addEventListener('mouseout',function(){
+    dividir.setAttribute('style','transform:scale(1,1)')
+ })
+ sign.addEventListener('mousedown',function(){
+    sign.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ sign.addEventListener('mouseout',function(){
+    sign.setAttribute('style','transform:scale(1,1)')
+ })
+ on.addEventListener('mousedown',function(){
+    on.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ on.addEventListener('mouseout',function(){
+    on.setAttribute('style','transform:scale(1,1)')
+ })
+ punto.addEventListener('mousedown',function(){
+    punto.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ punto.addEventListener('mouseout',function(){
+    punto.setAttribute('style','transform:scale(1,1)')
+ })
+ por.addEventListener('mousedown',function(){
+    por.setAttribute('style','transform:scale(0.95,0.95)')
+ })
+ por.addEventListener('mouseout',function(){
+    por.setAttribute('style','transform:scale(1,1)')
+ })
+
 
 cero.addEventListener('click',function(){
     numero = 0;
+     contador= pantalla.textContent;
+
     if (pantalla.textContent==0){
 
-    }else{
+    }else if(contador.length < 9){
+
         pantalla.textContent += numero;
     }
 })
@@ -43,9 +91,14 @@ cero.addEventListener('mouseout',function(){
 })
 uno.addEventListener('click',function(){
     var numero = 1;
+     contador= pantalla.textContent;
+
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
+
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -58,9 +111,14 @@ uno.addEventListener('mouseout',function(){
 
 dos.addEventListener('click',function(){
     var numero = 2;
+     contador= pantalla.textContent;
+
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
+
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -74,9 +132,14 @@ dos.addEventListener('mouseout',function(){
 
 tres.addEventListener('click',function(){
     var numero = 3;
+    contador = pantalla.textContent;
+
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
+
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -90,10 +153,14 @@ tres.addEventListener('mouseout',function(){
 
 cuatro.addEventListener('click',function(){
     var numero = 4;    
-    
+    contador = pantalla.textContent;
+
     if (pantalla.textContent== 0 ){
+
         pantalla.textContent=numero;
-    }else{
+
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
       
     }
@@ -108,9 +175,14 @@ cuatro.addEventListener('mouseout',function(){
 
 cinco.addEventListener('click',function(){
     var numero = 5;
+    contador = pantalla.textContent;
+
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
+        
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -124,9 +196,13 @@ cinco.addEventListener('mouseout',function(){
 
 seis.addEventListener('click',function(){
     var numero = 6;
+    contador = pantalla.textContent;
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
+
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -139,9 +215,14 @@ seis.addEventListener('mouseout',function(){
 
 siete.addEventListener('click',function(){
     var numero = 7;
+    contador = pantalla.textContent;
+
     if (pantalla.textContent == 0){
-              pantalla.textContent=numero;     
-    } else{
+
+              pantalla.textContent=numero;   
+
+    } else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -156,9 +237,13 @@ siete.addEventListener('mouseout',function(){
 
 ocho.addEventListener('click',function(){
     var numero = 8;
+    contador = pantalla.textContent;
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
+
+    }else if(contador.length < 9){
+
         pantalla.textContent+= numero;
     }
 })
@@ -172,10 +257,15 @@ ocho.addEventListener('mouseout',function(){
 
 nueve.addEventListener('click',function(){
     var numero = 9;
+    contador = pantalla.textContent;
+
     if (pantalla.textContent== 0){
+
         pantalla.textContent=numero;
-    }else{
-        pantalla.textContent += numero;
+
+    }else if(contador.length < 9){
+
+        pantalla.textContent+= numero;       
     }
 })
 nueve.addEventListener('mousedown',function(){
